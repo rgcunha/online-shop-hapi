@@ -1,0 +1,26 @@
+{
+  "name": "online-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint .",
+    "db:setup": "mongo localhost:27017/online-shop --quiet ./db/seeds.js"
+  },
+  "author": "rgcunha",
+  "license": "ISC",
+  "dependencies": {
+    "good": "^7.2.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.5.0",
+    "mongoose": "^4.11.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
